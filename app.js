@@ -1,4 +1,4 @@
 //setting up greetr object
-var g = G$("john", "doe")
+var g = G$("John", "Doe")
 
-console.log(g)
+g.greet().setLang('es').greet(true)
