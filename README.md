@@ -8,4 +8,4 @@ Greetr is a mini javascript library that helps us give greetings when a user log
 
 * Has an easy to type structure 
 
-* Support Jquery
+* Supports Jquery

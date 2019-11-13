@@ -76,8 +76,30 @@
             this.validate()
 
             return this
-        }
+        },
 
+        // method to accept a jquery selector and then updates whatever the selector is
+        HTMLGreeting: function(selector, formal) {
+            if (!$) {
+                throw 'jQuery not loaded';
+            }
+            if(!selector) {
+                throw 'missing jQuery selector'
+            }
+
+            var msg;
+            if(formal) {
+                msg = this.formalGreetings();
+            }
+            else {
+                msg = this. greeting();
+            }
+            // set jquery object and will set the html to the greeting
+            $(selector).html(msg)
+
+            // makes this chainable
+            return this
+        }
 
     };
 
